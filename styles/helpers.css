@@ -1,0 +1,20 @@
+.f-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-c {
+  display: flex;
+  justify-content: center;
+}
+
+.fd-c {
+  flex-direction: column;
+}
+
+.f-sb-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
