@@ -1,37 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <title>Vanilla SPA Router</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" rel="stylesheet" />
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Title</title>
-  <link rel="stylesheet" href="styles/index.css">
-</head>
-
-<body>
-
-  <body class="fd-c">
-    <header>
-      <div class="wrapper f-sb-c">
-        <div class="logo">logo</div>
-        <nav>
-          <ul class="nav" role="list">
-            <li><a href="#">Menu 1</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 3</a></li>
-        </nav>
-      </div>
-    </header>
-    <main class="f-c-c">
-      <div class="wrapper">
-        <div class="welcome f-c fd-c">
-          <h1 class="header-primary">Lorem ipsum</h1>
-          <p class="text-primary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam suscipit.</p>
+    <body>
+        <div id="root">
+            <nav id="main-nav" class="sidebar">
+                <a href="/" onclick="route()">Home</a>
+                <a href="/about" onclick="route()">About</a>
+                <a href="/lorem" onclick="route()">Lorem</a>
+            </nav>
+            <div id="main-page"></div>
         </div>
-      </div>
-    </main>
-  </body>
-</body>
 
+        <script src="js/router.js"></script>
+    </body>
 </html>
