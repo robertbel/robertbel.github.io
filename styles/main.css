@@ -7,35 +7,40 @@
 
 @font-face {
   font-family: "Kanit";
-  src: url("../fonts/Kanit-SemiBold.ttf");
+  src: local('Pacifico SemiBold'), local('Pacifico-SemiBold'), url("../fonts/Kanit-SemiBold.ttf");
   font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular.ttf");
+  src: local('Roboto'), local('Roboto Regular'), local('Roboto-Regular'), url("../fonts/Roboto-Regular.ttf");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Italic.ttf");
+  src: local('Roboto Italic'), local('Roboto-Italic'), url("../fonts/Roboto-Italic.ttf");
   font-weight: 400;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Bold.ttf");
+  src: local('Roboto Bold'), local('Roboto-Bold'), url("../fonts/Roboto-Bold.ttf");
   font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-BoldItalic.ttf");
+  src: local('Roboto BoldItalic'), local('Roboto-BoldItalic'), url("../fonts/Roboto-BoldItalic.ttf");
   font-weight: 700;
   font-style: italic;
+  font-display: swap;
 }
 
 html {
