@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Kanit";
+  src: local('Pacifico SemiBold'), local('Pacifico-SemiBold'), url("../fonts/Kanit-SemiBold.ttf");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local('Roboto'), local('Roboto Regular'), local('Roboto-Regular'), url("../fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local('Roboto Italic'), local('Roboto-Italic'), url("../fonts/Roboto-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local('Roboto Bold'), local('Roboto-Bold'), url("../fonts/Roboto-Bold.ttf");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local('Roboto BoldItalic'), local('Roboto-BoldItalic'), url("../fonts/Roboto-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+h1 {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 5rem;
+  color: var(--color-two);
+}
