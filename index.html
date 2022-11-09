@@ -12,7 +12,8 @@
 <body>
 
   <header>
-    <div class="wrapper">
+    <div class="wrapper f-sb-c">
+      <div class="logo">logo</div>
       <nav>
         <ul class="nav" role="list">
           <li><a href="#">Menu 1</a></li>
@@ -33,7 +34,7 @@
     <div class="wrapper">
       <!-- <div>yesyes</div> -->
       <div class="notification">
-        <div class="message slide-in-bottom" id="message">
+        <div class="message" id="message">
           There is nothing to scroll here...try the menu!
         </div>
       </div>
@@ -41,34 +42,34 @@
   </footer>
 
   <script>
-    // let i = 0;
-    // const element = document.getElementById('message');
-    // window.addEventListener("wheel", event => {
-    //   i++;
-    //   if (i >= 20) {
-    //     element.classList.add('slide-in-bottom');
-    //     removeEventListener("wheel", event);
-    //   }
-    //   console.log(i)
-    // });
+    let i = 0;
+    const element = document.getElementById('message');
+    window.addEventListener("wheel", event => {
+      i++;
+      if (i >= 20) {
+        element.classList.add('slide-in-bottom');
+        removeEventListener("wheel", event);
+      }
+      console.log(i)
+    });
 
-    // let a = 0;
-    // window.addEventListener("touchmove", event => {
-    //   a++;
-    //   if (a >= 30) {
+    let a = 0;
+    window.addEventListener("touchmove", event => {
+      a++;
+      if (a >= 30) {
 
-    //     element.classList.add('slide-in-bottom');
-    //     removeEventListener("touchmove", event);
-    //   }
-    //   console.log(a)
-    // });
+        element.classList.add('slide-in-bottom');
+        removeEventListener("touchmove", event);
+      }
+      console.log(a)
+    });
 
-    // element.addEventListener('animationend', () => {
-    //   console.log('Animation ended');
-    //   a = 0;
-    //   i = 0;
-    //   element.classList.remove('slide-in-bottom')
-    // });
+    element.addEventListener('animationend', () => {
+      console.log('Animation ended');
+      a = 0;
+      i = 0;
+      element.classList.remove('slide-in-bottom')
+    });
   </script>
 </body>
 
