@@ -42,7 +42,16 @@
       console.log(i)
     });
 
-
+    let a = 0;
+    window.addEventListener("touchmove", event => {
+      a++;
+      if (a >= 40) {
+        a = 0;
+        alert('There is nothing to scroll here...try the menu!')
+        removeEventListener("touchmove", event);
+      }
+      console.log(a)
+    });
   </script>
 </body>
 
