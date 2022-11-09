@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "Kanit";
-  src: local('Pacifico SemiBold'), local('Pacifico-SemiBold'), url("../fonts/Kanit-SemiBold.ttf");
-  font-weight: 600;
+  font-family: "RobotoSlab";
+  src: local('RobotoSlab Black'), local('RobotoSlab Black'), url("../fonts/RobotoSlab-Black.ttf");
+  font-weight: 900;
   font-display: swap;
 }
 
@@ -37,13 +37,14 @@
 }
 
 .header-primary {
-  font-family: 'Kanit', sans-serif;
-  font-weight: 600;
-  font-size: 5rem;
+  font-family: 'RobotoSlab', serif;
+  font-weight: 900;
+  font-size: var(--step-3);
   line-height: 1;
+  margin-bottom: var(--space-s-m);
 }
 
 .text-primary {
-  font-size: 1.5rem;
+  font-size: var(--step-0);
   line-height: 1.5;
 }

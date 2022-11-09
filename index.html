@@ -11,27 +11,39 @@
 
 <body>
 
-  <body class="fd-c">
-    <header>
-      <div class="wrapper f-sb-c">
-        <div class="logo">logo</div>
-        <nav>
-          <ul class="nav" role="list">
-            <li><a href="#">Menu 1</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 3</a></li>
-        </nav>
+  <header>
+    <div class="wrapper">
+      <nav>
+        <ul class="nav" role="list">
+          <li><a href="#">Menu 1</a></li>
+          <li><a href="#">Menu 2</a></li>
+          <li><a href="#">Menu 3</a></li>
+      </nav>
+    </div>
+  </header>
+  <main id="jaja">
+    <div class="wrapper">
+      <div class="welcome">
+        <h1 class="header-primary">Hi, lorem Ipsum. Amet consectetur adipisicing elit.</h1>
+        <p class="text-primary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam suscipit.</p>
       </div>
-    </header>
-    <main class="f-c-c">
-      <div class="wrapper">
-        <div class="welcome f-c fd-c">
-          <h1 class="header-primary">Lorem ipsum</h1>
-          <p class="text-primary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam suscipit.</p>
-        </div>
-      </div>
-    </main>
-  </body>
+    </div>
+  </main>
+
+  <script>
+    let i = 0;
+    window.addEventListener("wheel", event => {
+      i++;
+      if (i >= 10) {
+        i = 0;
+        alert('There is nothing to scroll here...try the menu!')
+        removeEventListener("wheel", event);
+      }
+      console.log(i)
+    });
+
+
+  </script>
 </body>
 
 </html>
