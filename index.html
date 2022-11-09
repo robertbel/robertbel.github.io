@@ -21,7 +21,7 @@
       </nav>
     </div>
   </header>
-  <main id="jaja">
+  <main>
     <div class="wrapper">
       <div class="welcome">
         <h1 class="header-primary">Hi, lorem Ipsum. Amet consectetur adipisicing elit.</h1>
@@ -29,14 +29,24 @@
       </div>
     </div>
   </main>
+  <footer class="footer-container">
+    <div class="wrapper">
+      <!-- <div>yesyes</div> -->
+      <div class="notification">
+        <div class="message" id="message">
+          There is nothing to scroll here...try the menu!
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script>
     let i = 0;
+    const element = document.getElementById('message');
     window.addEventListener("wheel", event => {
       i++;
-      if (i >= 10) {
-        i = 0;
-        alert('There is nothing to scroll here...try the menu!')
+      if (i >= 20) {
+        element.classList.add('slide-in-bottom');
         removeEventListener("wheel", event);
       }
       console.log(i)
@@ -45,12 +55,19 @@
     let a = 0;
     window.addEventListener("touchmove", event => {
       a++;
-      if (a >= 20) {
-        a = 0;
-        alert('There is nothing to scroll here...try the menu!')
+      if (a >= 30) {
+
+        element.classList.add('slide-in-bottom');
         removeEventListener("touchmove", event);
       }
       console.log(a)
+    });
+
+    element.addEventListener('animationend', () => {
+      console.log('Animation ended');
+      a = 0;
+      i = 0;
+      element.classList.remove('slide-in-bottom')
     });
   </script>
 </body>

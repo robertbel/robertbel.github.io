@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--color-thr);
+  overflow: hidden;
 }
 
 header {
@@ -29,4 +30,57 @@ main {
 .nav {
   display: flex;
   gap: 2rem;
+}
+
+.footer-container {
+  position: relative;
+  background-color: red;
+}
+
+.notification {
+  position: absolute;
+  bottom: calc(100% + 1rem);
+  left: 0;
+  right: 0;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.message {
+  padding: 1rem;
+  color: var(--color-thr);
+  background-color: var(--color-one);
+  border-radius: 0.5rem;
+  text-align: center;
+  display: none;
+}
+
+.slide-in-bottom {
+  display: block;
+	animation: slide-in-bottom 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-in-bottom
+ * ----------------------------------------
+ */
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(6rem);
+            transform: translateY(6rem);
+  }
+  5% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  95% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(6rem);
+            transform: translateY(6rem);
+  }
 }
