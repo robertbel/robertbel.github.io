@@ -57,8 +57,8 @@ main {
 }
 
 .slide-in-bottom {
-  -webkit-animation: slide-in-bottom 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-bottom 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-bottom 12s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 12s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /**
@@ -72,12 +72,12 @@ main {
             transform: translateY(6rem);
             opacity: 0;
   }
-  5% {
+  15% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
             opacity: 1;
   }
-  95% {
+  85% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
             opacity: 1;
@@ -94,12 +94,12 @@ main {
             transform: translateY(6rem);
             opacity: 0;
   }
-  5% {
+  15% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
             opacity: 1;
   }
-  95% {
+  85% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
             opacity: 1;
