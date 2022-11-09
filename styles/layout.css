@@ -58,7 +58,8 @@ main {
 
 .slide-in-bottom {
   display: block;
-	animation: slide-in-bottom 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-bottom 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /**
@@ -66,6 +67,24 @@ main {
  * animation slide-in-bottom
  * ----------------------------------------
  */
+ @-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(6rem);
+            transform: translateY(6rem);
+  }
+  5% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  95% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(6rem);
+            transform: translateY(6rem);
+  }
+}
 @keyframes slide-in-bottom {
   0% {
     -webkit-transform: translateY(6rem);
