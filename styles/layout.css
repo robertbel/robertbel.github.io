@@ -7,6 +7,7 @@ body {
 
 header {
   padding-top: var(--space-s-m);
+
 }
 
 main {
@@ -32,9 +33,40 @@ main {
   gap: var(--space-m-l);
 }
 
+.link::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.link::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: var(--color-two);
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+.link {
+  color: var(--color-two);
+  position: relative;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: var(--color-one);
+}
+
 .footer-container {
   position: relative;
-  background-color: red;
+  background-color: var(--color-two);
 }
 
 .notification {
