@@ -1,8 +1,8 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 ---
 
 <!DOCTYPE html>
@@ -13,10 +13,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
-			<h1>Hello!</h1>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatum, nesciunt ipsa atque quos cupiditate vero quas. Doloribus illum tempore reprehenderit sunt, sint accusamus maxime delectus quo iusto soluta minus!
-			</p>
+			<div class="wrapper">
+				<h1>Hello!</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+			</div>
 		</main>
 		<Footer />
 	</body>

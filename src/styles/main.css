@@ -1,0 +1,36 @@
+html {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-one);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-thr);
+  overflow: hidden;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  width: 90vw;
+  width: clamp(16rem,93vw,75rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.09rem,1rem + 0.47vw,1.33rem);
+  padding-right: clamp(1.09rem,1rem + 0.47vw,1.33rem);
+}
